@@ -1,0 +1,23 @@
+.size{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+   
+}
+.red {
+    background-color: red;
+    float: right;
+}
+.clear-float { clear: both;}
+.black{ 
+    background-color: black;
+}
+.container-flex{
+    display: flex;
+    background-color: burlywood;
+    flex-direction: row ;
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+    justify-content: space-around;
+    /* justify-content: space-between; */
+}
