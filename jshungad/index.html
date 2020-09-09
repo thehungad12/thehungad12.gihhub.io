@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="main.js"></script>
+    <script>
+        // // var name 
+        // var age = 14
+        // // console.log (name)
+        // // console.log (age)
+        // console.log(type);
+        
+
+
+        // var foo = 50;     //biến toàn cục
+        // function test () { 
+        //     var bar =100; // biến cục bộ 
+        //     console.log(bar);
+        // }
+        // test()
+        //   console.log(foo);
+        //   console.log(bar);
+        var name = "Nguyễn Thế Hưng"
+        var address = " Hà Nội "
+         console.log(name);
+         console.log(address);
+         console.log(typeof name);
+         console.log(typeof address);
+
+
+         var mess = " Xin chào \"Nguyễn Thế Hưng\" "
+         console.log(mess);
+
+         var firtsName = " Nguyễn"
+         var lastName = "Thế Hưng"
+
+        //  var fullName = "Nguyễn" + " Thế Hưng"
+        var fullName = firtsName +" "+ lastName
+          console.log(fullName);
+          
+            // Thuộc tính  ( Length)
+             console.log(fullName.length,typeof fullName.length);
+
+             // Phương thức ( method)
+             // indexOf
+             console.log(fullName.indexOf("Thủy"));
+             // LastindexOf()
+             console.log(fullName.lastIndexOf("n"));
+             //Cộng chuỗi concat()
+             var fullName1 = firtsName.concat(" ",lastName," Năm nay 30 tuổi ")
+             console.log(fullName1);
+             // Cắt chuỗi 
+             //1.slice( vị trí bắt đầu , vị trí kết thúc)
+            // console.log(fullName.slice(0,8));
+            var sliceStr = fullName.slice(0,6)
+
+            console.log(sliceStr);
+            console.log(fullName);
+
+            var sliceStr1 = fullName.slice(1)
+
+            console.log(sliceStr);
+
+
+
+            var sliceStr2 = fullName.slice(-5,-2)
+             console.log(sliceStr2);
+
+             // 2.substring (vị trí đầu . kết thúc)
+             // tương tự nhưng khoonng chuyền tham số âm 
+
+             //3 substr( =vị trí bắt đầu , độ dài chuỗi cần cắt)
+
+
+             //Chữ hoa chữ thường 
+             // Hoa toUpperCase
+             // THƯỜNG toLowerCase
+              
+             console.log(fullName.toUpperCase());
+             console.log(fullName.toLowerCase());
+             
+             // chuyển từ chuỗi -> mảng  ! rất quan trọng 
+             // split ()
+             var arrStr = fullName.split(" ")
+             console.log(arrStr);
+
+             //Number
+              var num1 = 10
+              var num2 = 9 
+               console.log(num1, typeof num1);
+               console.log(num2, typeof num2);
+                
+               console.log(num1 +  num2);
+               console.log(num1  - num2);
+               console.log(num1  * num2);
+               console.log(num1  ** num2);
+               console.log(num1  / num2);
+               console.log(num1  % num2);
+
+               console.log(Math.pow(num1,num2));  // tương đương **
+               // Làm tròn số 
+               // Math.ceil - làm tròn lên 
+               // Math.floor - làm tròn xuống 
+               // math.round - làm tròn bình thường 
+                // trên console 
+                // math.random() random số trong khoảng 0-1 
+                //math.PI - trả về con Pi 
+                // math. max min 
+
+
+
+
+                // Boolean - có 2 giá tri true và false
+
+                var isStatus = true // !false // câu điều kiện default 
+                console.log(isStatus , typeof isStatus);
+
+                //array  lưu trũ danh sách - cách khai báo mảng 
+
+                var number = [ 1,4,2,5,6, "Hà Nội", true]
+
+                console.log(number);
+
+                console.log(number[4]);
+                console.log(number[5]);
+
+                number[0] = " Hải Phòng "
+
+                var array1 = [1,2,3]
+                var array2 = [4,5,6]
+                var array3 = array1 +","+ array2 + [,7,8, 9]
+                console.log(array3);
+                
+
+                //Method thêm phần tử ở đầu mảng 
+                //Length
+                var array4 = [1,2,3,4,5,6,7,"abc"]
+                console.log(array4.length);
+                
+            //thêm phần tử đầu
+            array4.unshift(0)
+            console.log(array4);
+            // thêm phần tử cuối mảng 
+            array4.push ("xyz")
+            console.log(array4);
+            //xóa phần tử đầu mảng 
+            array4.shift ()
+            console.log(array4);
+            // xóa phần tử cuối mảng 
+            array4.pop 
+            console.log(array4);
+            // xóa / thêm ở vị trí bất kì  - splice()
+            array4.splice (2,0,10,100)
+            console.log(array4);
+            //cắt mảng 
+            console.log(array4.slice(1,4));
+            // đảo ngược mảng 
+            var arr5 = [1,2,3,4]
+             console.log(arr5.reverse());
+
+             // sắp xếp mảng - sort()
+              var arr6 = [ 4,3,2,1,"Hà Nội "]
+              console.log(arr6.sort(function(a,b) {
+                  return b - a 
+
+              }));
+
+
+
+
+
+
+            
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,1 @@
+console.log ("xin chào hưng đẹp trai")

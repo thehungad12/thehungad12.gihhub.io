@@ -1,0 +1,22 @@
+ *{ box-sizing: border-box;}
+       
+    .hungdz{
+        width:35% ;
+        height: 100%;
+        margin:auto;
+    }
+       
+       
+       #tieude { text-transform:uppercase;
+        text-align : center ;
+      }
+#tendon{text-transform:uppercase;
+       text-align : center ;
+      font-size:90%;}
+#profile {text-align: left;}
+.reason {text-align: left;}
+#decorate{text-align:center;}
+.address {text-align:right;}
+#addrr {
+    margin-right:8% ;
+}
