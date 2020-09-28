@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //bai1
+        var s1, s2;
+        function checkStringExist(s1, s2) {
+            if (s1.indexOf(s2) > -1) {
+                return true;
+            } else {
+                return false;
+            }
+
+        }
+        s1 = " I love you "
+        console.log(checkStringExist( s1 , "you") );
+        console.log( checkStringExist (s1 , "hate" ) );
+        //bai2 
+        var h1 = "Xin Chào Các Bạn"
+        var h1spl = h1.splice (0,8)
+        console.log( h1spl);
+    </script>
+</body>
+</html>

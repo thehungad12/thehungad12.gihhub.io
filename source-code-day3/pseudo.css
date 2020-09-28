@@ -1,0 +1,195 @@
+
+h2 {
+	margin: auto;
+	text-align: center;
+}
+#login {
+	width: 150px;
+	height: 50px;
+	background-color: #2d5986;
+	text-align: center;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: border-radius 0.4s linear, background-color 0.6s ease-out;
+	margin: auto;
+}
+#login:hover {
+	background-color: #26734d;
+	border-radius: 30px;
+}
+#container {
+	width: 50%;
+	height: 45vw;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+#container .child {
+	flex: 0 0 33%;
+}
+img {
+	width: 100%;
+	height: 100%;
+	transition: transform 0.3s ease-out;
+}
+img:hover {
+	transform: scale(1.3);
+}
+#test_animation {
+	width: 20%;
+	height: 200px;
+	background-color: green;
+	animation: changeColor 2s infinite;
+}
+@keyframes changeColor {
+	from {
+		background-color: grey;
+	}
+	to {
+		background-color: red;
+	}
+}
+
+#container_heart {
+	width: 100%;
+	position: relative;
+	margin: auto;
+	display: inline-block;
+	margin-bottom: 5vw;
+}
+#heart {
+	background-color: #ff8080;
+	height: 10vw;
+	width: 10vw;
+	transform: rotate(-45deg);
+	position: relative;
+	display: inline-block;
+	left: 45%;
+	top: 2vw;
+	animation: beat 3s infinite;
+}
+#heart:before, #heart:after {
+	content: '';
+	background-color: #ff8080;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	border-radius: 50%;	
+}
+#heart:before {
+	top: -50%;
+}
+#heart:after {
+	right: -50%;
+}
+
+@keyframes beat {
+  0% {
+    transform: rotate(-45deg) scale(0.8);
+  }
+  10% {
+    transform: rotate(-45deg) scale(0.9);
+  }
+  20% {
+    transform: rotate(-45deg) scale(0.8);
+  }
+  30% {
+    transform: rotate(-45deg) scale(0.9);
+  }
+  50% {
+    transform: rotate(-45deg) scale(0.8);
+  }
+  55% {
+  	transform: rotate(-45deg) scale(0.9);
+  }
+  60% {
+  	transform: rotate(-45deg) scale(0.8);
+  }
+  65% {
+  	transform: rotate(-45deg) scale(0.9);
+  }
+  70% {
+  	transform: rotate(-45deg) scale(0.8);
+  }
+  75% {
+  	transform: rotate(-45deg) scale(0.9);
+  }
+  100% {
+    transform: rotate(-45deg) scale(0.8);
+  }
+}
+#frame {
+	margin: auto;
+	margin: 2vw auto 5vw auto;
+	width: 16%;
+	font-size: 30px;
+}
+#frame .item  {
+	position: relative;
+	margin-bottom: 3px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	text-align: center;
+}
+#text:before {
+	position: absolute;
+	left: 12%;
+	top: -55%;
+	content: "CODING";
+	animation: moveDown 0.4s forwards;
+	color: white;
+	background-color: orange;
+	visibility: hidden;
+}
+#text {
+	position: relative;
+	animation: change 0.4s forwards 0.5s;
+	visibility: hidden;
+	background-color: purple;
+	color: white;
+
+}
+#text:after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: "LEARNING";
+	animation: next 1s forwards 0.9s;
+	color: white;
+	visibility: hidden;
+	background-color: green;
+}
+@keyframes moveDown {
+	70% {
+		position: absolute;
+		visibility: visible;
+		top: 0;
+	}
+	100% {
+		position: absolute;
+		visibility: hidden;
+		top: 0;
+	}
+}
+@keyframes change {
+	70% {
+		visibility: visible;
+		transform: scale(1.1);
+	}
+	100% {
+		transform: scale(1.1);
+		visibility: hidden;
+	}
+}
+@keyframes next {
+	80% {
+		visibility: visible;
+	}
+	100% {
+		transform: scaleY(1.01);
+		visibility: visible;
+	}
+}
