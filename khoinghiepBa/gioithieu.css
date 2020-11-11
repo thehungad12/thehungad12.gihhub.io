@@ -8,7 +8,7 @@ body {
 }
 header {
     background-color:  #994d00;
-    padding: 15px 0;
+    padding: 1em 0;
 }
 .header {
    width: 80%;
@@ -38,7 +38,7 @@ header {
     display: block;
     color: wheat;
     text-decoration: none;
-    padding: 0 50px ;
+    padding: 0 3rem ;
     font-size: 23px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -58,6 +58,17 @@ header {
     border-radius: 10px;
     font-size: 15px;
 }
+.line { 
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+}
+#nutbam {
+    width: 60px ;
+    height: 60px;
+    border-radius: 50%;
+}
+
 /* giới thiệu */
 .container {
     width: 80% ;
@@ -108,14 +119,4 @@ img {
     max-width: 150px ;
     margin: auto;
     margin-bottom:50px ;
-}
-.line { 
-    position: fixed;
-    right: 40px;
-    bottom: 40px;
-}
-#nutbam {
-    width: 60px ;
-    height: 60px;
-    border-radius: 50%;
 }
