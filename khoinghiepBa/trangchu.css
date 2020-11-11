@@ -68,3 +68,17 @@ header {
     height: 60px;
     border-radius: 50%;
 }
+.giaodientt {
+    width: 80% ;
+    background-color: white; 
+    margin-top: 50px;
+    border-left: 1px solid black  ;
+    border-right: 1px solid black  ;
+    border-top: 1px solid black  ;
+    padding: 35px ;
+    margin: auto;
+}
+.hinhnhai {
+    margin: auto;
+    display: block;
+}
