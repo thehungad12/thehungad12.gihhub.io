@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <canvas id ="canvas" ></canvas>
+    <script>
+        const canvas = document.getElementById('canvas');
+        const c = canvas.getContext ('2d')
+
+canvas.width =1000;
+canvas.height =600;
+canvas.style.backgroundColor= '#000';
+        class Ball {
+            constructor (x,y,radius,color) {
+                this.x = x;
+                this.y = y;
+                this.radius = radius;
+                this.color = color;
+            }
+            draw() {
+                c.beginPath();
+                c.arc(this.x, this.y, this.radius, 0, Math.PI*2);
+                c.fillStyle = this.color;
+                c.fill();
+            }
+            move(dx,dy){
+                c.clearRect (0,0,canvas.width, canvas.height);
+
+                if(this.x + dx > canvas.width - this.radius){
+                    console.log("Không thể xuyên phá");
+                    this.x = canvas.width - this.radius;
+                    this.draw();
+                    return;
+                }
+                if(this.x + dx < 0 + this.radius){
+                    console.log("Không thể xuyên phá");
+                    this.x = 0 + this.radius;
+                    this.draw();
+                    return;
+                }
+                if(this.y + dy > canvas.height - this.radius){
+                    console.log("Không thể xuyên phá");
+                    this.y = canvas.height - this.radius;
+                    this.draw();
+                    return;
+                }
+                if(this.y + dy < 0 + this.radius){
+                    console.log("Không thể xuyên phá");
+                    this.y = 0 + this.radius;
+                    this.draw();
+                    return;
+                }
+                this.x = this.x + dx;
+                this.y = this.y + dy;
+                this.draw();
+            }
+        }
+        const ball = new Ball(canvas.width/2 , canvas.height/2,30,'red');
+        console.log(ball);
+        ball.draw();
+
+        document.addEventListener ('keydown' , function(e){
+            if (e.keyCode ==37){
+                ball.move (-30,0);
+            }
+
+            if(e.keyCode==39) {
+                ball.move(30,0);
+            }
+            if (e.keyCode ==38) {
+                ball.move (0,-30);
+            }
+            if (e.keyCode ==40) {
+                ball.move (0,30);
+            }
+            
+        })
+
+    </script>
+</body>
+</html>

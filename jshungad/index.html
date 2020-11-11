@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <script src="main.js"></script>
+    <!-- <script src="main.js"></script>
     <script>
         // // var name 
         // var age = 14
@@ -197,6 +197,43 @@
 
 
 
+    </script> -->
+    <script>
+        var mon=2 , year = 444  ;
+        switch (mon) {
+
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            {
+                console.log('Có 31 ngày');
+            }
+            break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+            {
+                console.log('Có 30 ngày');
+            }
+            break;
+            case 2 :
+                { 
+                    if ( year % 400 == 0 || (year % 4 ==0 && year % 100 !=0)){
+                        console.log('Tháng có 29 ngày');
+                    } else {
+                        console.log('Tháng có 28 ngày ');
+                    }
+                }
+
+
+        }
+        for (var i = 0 ; i < 10 ; i++ )
+        {
+            console.log(i);
+        }
     </script>
 
 </body>
